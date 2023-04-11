@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+
+
+
+
+h1 {
+    text-align: center;
+    color: rgb(225, 221, 228);
+    font-family: 'Fraunces', serif;
+}
+
+h2{
+  text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.card_container{
+    max-width: 350px;
+    display: flex;
+}
+
+.img img {
+    max-width: 100%;
+    display: inherit;
+}
+
+.card{
+     cursor: pointer;
+    height: 500px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    padding-right: 25px;
+}
+
+
+input::placeholder{
+    text-align: center;
+}
+
+input{
+    text-align: center;
+}
+
+form{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    width: 300px;
+    gap: 40px;
+    flex-direction: column;
+}
+
+form input{
+border: 0px solid;
+outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form input::placeholder{
+    text-align: center;
+}
+
+form input{
+    text-align: center;
+}
+
+
+@media (max-width: 1150px) {
+
+main{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+   .card_container{
+    display: flex;
+    max-width: 200px;
+   }
+
+   #texto{
+    padding: 40px;
+   }
+}
+
+@media (max-width: 780px) {
+
+main{
+    margin: 0px auto;
+    width: 400px;
+}
+
+.card{
+    height: 520px;
+}
+
+}
+

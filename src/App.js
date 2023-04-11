@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import ContextApi from './Contexts/ContextApi';
+import Header from './Components/Header';
+import Products from './Components/Products';
+import SearchProduct from './Components/SearchProduct';
+import {BrowserRouter, Routes, Route, Link, To} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="img_background">
+
+
+<BrowserRouter >
+
+
+<Header/>
+<ContextApi>
+<Routes>
+
+<Route path="/ReactTEST_work" element={<Products />}></Route>
+<Route path="/Products" element={<Products />}></Route>
+<Route path="/SearchProduct" element={<SearchProduct />}></Route>
+
+</Routes>
+</ContextApi>
+
+
+</BrowserRouter>
+
+
     </div>
   );
 }
